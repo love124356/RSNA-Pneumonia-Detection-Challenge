@@ -62,7 +62,7 @@ Trained model will be saved as ```models/fasterrcnn_resnet50_fpn_pneumonia_detec
 
 ## Inference
 
-Please download [these five model weights]() if you want to reproduce my submission file, and put them in root or the folder you create.
+Please download [these five model weights](https://reurl.cc/nE0RDn) if you want to reproduce my submission file, and put them in root or the folder you create.
 
 To reproduce my submission file or test the model you trained, run inference.ipynb.
 
@@ -73,7 +73,7 @@ Prediction file will be saved as ```root/{SUBMISSION_PATH}```
 
 Finally, you can run the following command to ensemble the five .csv (using conda env "rsnatest")[2].
 
-We also provide the [five .csv]().
+We also provide the [five .csv](https://reurl.cc/dX5v7q).
 
 ```py
 python ensemble.py stage_2_test_images output ensemble.csv 0.csv 1.csv 2.csv 3.csv 4.csv
