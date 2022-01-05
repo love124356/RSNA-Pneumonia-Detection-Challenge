@@ -33,6 +33,8 @@ Input:
 Output:
     A list of boxes, on the same format as the input. Confidences are in range 0-1.
 """
+
+
 def ensemble(dets, conf_thresh=0.5, iou_thresh=0.1, weights=None):
     assert(type(iou_thresh) == float)
 
@@ -124,7 +126,8 @@ def ensemble(dets, conf_thresh=0.5, iou_thresh=0.1, weights=None):
                     out.append(new_box)
     return out
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('dicom_dir', help='path to the directory with DICOM images')
     parser.add_argument('out_images_dir', help='path to the directory for the output images')

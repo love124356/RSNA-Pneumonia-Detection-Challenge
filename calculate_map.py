@@ -22,7 +22,7 @@ def calculate_iou(box1, box2):
     return intersect / union
 
 
-def map_iou(boxes_true, boxes_pred, scores, thresholds = [0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75]):
+def map_iou(boxes_true, boxes_pred, scores, thresholds=[0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75]):
     """
     Mean average precision at differnet intersection over union (IoU) threshold
     input:
@@ -61,12 +61,12 @@ def map_iou(boxes_true, boxes_pred, scores, thresholds = [0.4, 0.45, 0.5, 0.55, 
                 miou = calculate_iou(bt, bp)
                 if miou >= t and not matched and j not in matched_bt:
                     matched = True
-                    tp += 1 # bt is matched for the first time, count as TP
+                    tp += 1  # bt is matched for the first time, count as TP
                     matched_bt.add(j)
             if not matched:
-                fn += 1 # bt has no match, count as FN
+                fn += 1  # bt has no match, count as FN
 
-        fp = len(boxes_pred) - len(matched_bt) # FP is the bp that not matched to any bt
+        fp = len(boxes_pred) - len(matched_bt)  # FP is the bp that not matched to any bt
         m = tp / (tp + fn + fp)
         map_total += m
 
@@ -152,7 +152,7 @@ if __name__ == '__main__':
 
     count = 0
     total = 0.0
-    for  k in submission.keys():
+    for k in submission.keys():
         print('label', labels[k], 'submission', submission[k])
         if labels[k] == []:
             if submission[k] == []:
