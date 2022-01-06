@@ -27,6 +27,7 @@ All requirements should be detailed in requirements.txt.
 $ cd RSNA-Pneumonia-Detection-Challenge
 $ conda env create -f environment.yml
 $ pip install ipykernel
+$ pip install opencv-python
 ```
 We use VSCode to open train.ipynb or inference.ipynb, and choose the kernel name "rsnatest". Next, Run all the cells.
 
