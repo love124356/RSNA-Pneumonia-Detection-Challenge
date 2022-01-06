@@ -21,7 +21,9 @@ Intel® Core™ i7-3770 CPU @ 3.40GHz × 8
 GeForce GTX 1080/PCIe/SSE2
 
 ## Requirement
-All requirements should be detailed in requirements.txt.
+If you want to inference without create envs, you can [download this notebook](https://reurl.cc/02Do0Y) and use Colab env.
+
+All requirements should be detailed in environment.yml.
 
 ```env
 $ cd RSNA-Pneumonia-Detection-Challenge
