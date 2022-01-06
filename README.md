@@ -22,6 +22,7 @@ GeForce GTX 1080/PCIe/SSE2
 
 ## Requirement
 If you want to inference without create envs, you can [download this notebook](https://reurl.cc/02Do0Y) and use Colab env.
+Run the all cells and it will automatically download the final submission.
 
 All requirements should be detailed in environment.yml.
 
