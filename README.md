@@ -34,6 +34,7 @@ We use VSCode to open train.ipynb or inference.ipynb, and choose the kernel name
 Maybe you can use Kaggle or Colab to run these codes.
 
 The jpg images can be downloaded from [here](https://www.kaggle.com/sovitrath/rsna-pneumonia-detection-2018?select=input) and put in root.
+
 The origin .dam can be downloaded from [here](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data) and put in root.
 
 ## Repository Structure
@@ -77,6 +78,10 @@ Prediction file will be saved as ```root/{SUBMISSION_PATH}```
 Finally, you can run the following command to ensemble the five .csv (using conda env "rsnatest")[2].
 
 We also provide the [five .csv](https://reurl.cc/dX5v7q).
+```env
+conda activate rsnatest
+cd RSNA-Pneumonia-Detection-Challenge
+```
 
 ```py
 python ensemble.py stage_2_test_images output ensemble.csv 0.csv 1.csv 2.csv 3.csv 4.csv
