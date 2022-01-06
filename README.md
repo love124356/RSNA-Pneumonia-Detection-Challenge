@@ -43,7 +43,8 @@ RSNA-Pneumonia-Detection-Challenge(root)
   |   +-- images                    # training data
   |   +-- samples                   # testing data
   |   +-- stage_2_train_labels.csv  # training labels
-  +-- stage_2_test_images           # testing .dcm 
+  +-- stage_2_test_images           # testing .dcm
+  +-- stage_2_train_images          # training .dcm
   +-- models                        # model weights
   +-- calculate_map.py              # ensemble utils
   +-- ensemble.py                   # reproduce my submission file
